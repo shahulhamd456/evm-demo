@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVM | 25 Years of Legacy</title>
+    <meta name="description" content="EVM - Celebrating 25 years of legacy in the automotive industry">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@1,700;1,900&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/custome.css?v=5">
+    <!-- Anti-FOUC: apply saved theme before paint -->
+    <script>if (localStorage.getItem('evm-theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark');</script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-container">
+            <a href="index.html" class="logo">EVM</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="nav-item-dropdown">
+                        <a href="#">Sectors <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" style="margin-left: 4px;">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item-sub-dropdown">
+                                <a href="#">Automobile <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                        class="r-arrow" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 18l6-6-6-6" />
+                                    </svg></a>
+                                <ul class="sub-dropdown-menu">
+                                    <li><a href="#">Cars</a></li>
+                                    <li><a href="#">Bikes</a></li>
+                                    <li><a href="#">Commercial</a></li>
+                                    <li><a href="#">EVM Wheels self drive rent a car</a></li>
+                                    <li><a href="#">EVM Wheels rent a motorcycle</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Hotel</a></li>
+                            <li><a href="#">Plantation</a></li>
+                            <li><a href="#">Entertainment</a></li>
+                            <li><a href="#">Transportation</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="header-contact-btn desktop-only">Contact Us</a>
+                <button id="darkToggleBtn" class="dark-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                    <span class="icon-moon">&#9790;</span>
+                    <span class="icon-sun">&#9728;</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile App Sidebar -->
+    <div class="mobile-sidebar-backdrop" id="sidebarBackdrop"></div>
+    <aside class="mobile-sidebar" id="mobileSidebar" aria-hidden="true">
+        <!-- Sidebar Header -->
+        <div class="msb-header">
+            <div class="msb-brand">
+                <span class="msb-logo">EVM</span>
+                <span class="msb-tagline">25 Years of Legacy</span>
+            </div>
+            <button class="msb-close" id="sidebarClose" aria-label="Close Menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Promo Badge -->
+        <div class="msb-promo">
+            <div class="msb-promo-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                </svg>
+            </div>
+            <div class="msb-promo-text">
+                <strong>Celebrating 25 Years</strong>
+                <span>of automotive excellence</span>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <div class="msb-section-label">NAVIGATE</div>
+        <nav class="msb-nav">
+            <a href="#" class="msb-nav-item active" data-index="0">
+                <div class="msb-nav-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                    </svg>
+                </div>
+                <span class="msb-nav-label">Home</span>
+                <div class="msb-nav-arrow">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </div>
+            </a>
+
+            <a href="#" class="msb-nav-item" data-index="1">
+                <div class="msb-nav-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
+                        <circle cx="12" cy="8" r="5" />
+                        <path d="M20 21a8 8 0 1 0-16 0" />
+                    </svg>
+                </div>
+                <span class="msb-nav-label">About</span>
+                <div class="msb-nav-arrow">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </div>
+            </a>
+
+            <!-- Sectors with expandable sub-menu -->
+            <div class="msb-nav-item msb-has-sub" id="msbSectors" data-index="2">
+                <div class="msb-nav-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
+                        <rect x="3" y="3" width="7" height="7" rx="1" />
+                        <rect x="14" y="3" width="7" height="7" rx="1" />
+                        <rect x="3" y="14" width="7" height="7" rx="1" />
+                        <rect x="14" y="14" width="7" height="7" rx="1" />
+                    </svg>
+                </div>
+                <span class="msb-nav-label">Sectors</span>
+                <div class="msb-nav-arrow msb-expand-arrow">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M6 9l6 6 6-6" />
+                    </svg>
+                </div>
+            </div>
+            <div class="msb-sub-menu" id="msbSectorsMenu">
+                <a href="#" class="msb-sub-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3m4 0v9a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+                    </svg>
+                    Automobile
+                </a>
+                <a href="#" class="msb-sub-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    </svg>
+                    Hotel
+                </a>
+                <a href="#" class="msb-sub-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                    Plantation
+                </a>
+                <a href="#" class="msb-sub-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="23 7 16 12 23 17 23 7" />
+                        <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                    </svg>
+                    Entertainment
+                </a>
+                <a href="#" class="msb-sub-item">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="1" y="3" width="15" height="13" rx="1" />
+                        <path d="M16 8h4l3 3v5h-7V8z" />
+                        <circle cx="5.5" cy="18.5" r="2.5" />
+                        <circle cx="18.5" cy="18.5" r="2.5" />
+                    </svg>
+                    Transportation
+                </a>
+            </div>
+
+            <a href="#" class="msb-nav-item" data-index="3">
+                <div class="msb-nav-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                    </svg>
+                </div>
+                <span class="msb-nav-label">Career</span>
+                <div class="msb-nav-arrow">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </div>
+            </a>
+
+            <a href="#" class="msb-nav-item" data-index="4">
+                <div class="msb-nav-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z" />
+                    </svg>
+                </div>
+                <span class="msb-nav-label">Contact</span>
+                <div class="msb-nav-arrow">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </div>
+            </a>
+        </nav>
+
+        <div class="msb-divider"></div>
+
+        <!-- Quick Stats -->
+        <div class="msb-section-label">QUICK STATS</div>
+        <div class="msb-stats">
+            <div class="msb-stat-pill">
+                <span class="msb-stat-num">68+</span>
+                <span class="msb-stat-desc">Years</span>
+            </div>
+            <div class="msb-stat-pill">
+                <span class="msb-stat-num">1.2M</span>
+                <span class="msb-stat-desc">Customers</span>
+            </div>
+            <div class="msb-stat-pill">
+                <span class="msb-stat-num">14+</span>
+                <span class="msb-stat-desc">Brands</span>
+            </div>
+        </div>
+
+        <!-- Sidebar Footer -->
+        <div class="msb-footer">
+            <div class="msb-social">
+                <a href="#" class="msb-social-btn" aria-label="Instagram">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <circle cx="12" cy="12" r="5" />
+                        <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+                    </svg>
+                </a>
+                <a href="#" class="msb-social-btn" aria-label="Facebook">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                </a>
+                <a href="#" class="msb-social-btn" aria-label="YouTube">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+                        <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+                    </svg>
+                </a>
+            </div>
+            <button class="msb-dark-toggle" id="sidebarDarkToggle" onclick="toggleDarkMode()">
+                <span class="toggle-label">Dark Mode</span>
+                <div class="toggle-track">
+                    <div class="toggle-thumb"></div>
+                </div>
+            </button>
+            <p class="msb-copyright">&copy; 2025 EVM Group</p>
+        </div>
+    </aside>
+
+    <!-- Cinematic Premium Preloader -->
+    <div class="evm-preloader" id="evmPreloader">
+        <!-- Corner bracket accents -->
+        <div class="evm-pre-corner evm-pre-corner--tl" aria-hidden="true"></div>
+        <div class="evm-pre-corner evm-pre-corner--tr" aria-hidden="true"></div>
+        <div class="evm-pre-corner evm-pre-corner--bl" aria-hidden="true"></div>
+        <div class="evm-pre-corner evm-pre-corner--br" aria-hidden="true"></div>
+        <!-- Scan line sweep -->
+        <div class="evm-pre-scanline" aria-hidden="true"></div>
+
+        <div class="evm-preloader-inner">
+            <!-- Wheel with glow ring -->
+            <div class="evm-wheel-wrap">
+                <div class="evm-wheel-glow-ring" aria-hidden="true"></div>
+                <div class="evm-wheel-entrance-wrap">
+                    <img src="assets/images/wheel-intro.png" alt="Luxury Car Wheel" class="evm-wheel-img" draggable="false">
+                </div>
+            </div>
+
+            <!-- Logo row with decorative lines and letter animation -->
+            <div class="evm-pre-logo-row">
+                <div class="evm-pre-deco-line evm-pre-deco-line--l" aria-hidden="true"></div>
+                <span class="evm-preloader-logo"><span class="evm-logo-l" style="--li:0">E</span><span class="evm-logo-l" style="--li:1">V</span><span class="evm-logo-l" style="--li:2">M</span></span>
+                <div class="evm-pre-deco-line evm-pre-deco-line--r" aria-hidden="true"></div>
+            </div>
+
+            <span class="evm-preloader-tagline">25 Years of Legacy</span>
+
+            <div class="evm-preloader-bar-wrap">
+                <div class="evm-preloader-bar" id="evmPreloaderBar"></div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Banner Section -->
+        <section class="hero-banner-section" style="overflow: hidden; position: relative;">
+            <!-- Video Background -->
+            <div class="hero-video-wrap">
+                <video autoplay muted loop playsinline class="hero-video">
+                    <source src="assets/videos/0318(9).mp4" type="video/mp4">
+                </video>
+            </div>
+            <!-- White Gradient Overlay -->
+            <div class="hero-overlay"></div>
+            <!-- Content -->
+            <div class="hero-content">
+                <div class="hero-left">
+                    <div class="hero-big-number hero-25-reveal hero-delay-25" id="heroNum"><img src="./assets/images/25 year image.png" alt="25"></div>
+                    <p class="hero-legacy-text hero-intro-reveal hero-delay-text1">Years of Legacy</p>
+
+                    <p class="hero-description hero-intro-reveal hero-delay-text2">25 years of passion, performance, and
+                        progress. EVM Group stands strong as a symbol
+                        of trust, delivering exceptional automotive
+                        experiences every mile.</p>
+
+                    <div class="hero-exp-bar hero-intro-reveal hero-delay-exp">
+                        <div class="hero-exp-divider"></div>
+                        <div class="hero-exp-stat">
+                            <span class="hero-exp-num">68<sup>+</sup></span>
+                            <span class="hero-exp-label">Years of<br>Experience</span>
+                        </div>
+                        <div class="hero-exp-dot"></div>
+                        <div class="hero-exp-stat">
+                            <span class="hero-exp-num">10<sup>k+</sup></span>
+                            <span class="hero-exp-label">Happy<br>Customers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="trust-section">
+            <div class="trust-container">
+                <div class="trust-left">
+                    <div class="trust-badge reveal-left">OUR HERITAGE</div>
+                    <h2 class="trust-title reveal-left delay-100">Building<br>Trust<br>For Over<br><span
+                            class="highlight-year">68
+                            Years</span></h2>
+                    <p class="trust-desc reveal-up delay-200">We've been at the forefront of<br>innovation, consistently
+                        delivering<br>excellence and building lasting<br>relationships that stand the test<br>of time.
+                    </p>
+
+                    <div class="trust-leaders reveal-up delay-300">
+                        <div class="trust-avatars">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&q=80"
+                                alt="Leader" style="object-fit: cover;">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&q=80"
+                                alt="Leader" style="object-fit: cover;">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&q=80"
+                                alt="Leader" style="object-fit: cover;">
+                            <div class="trust-avatar-more">+2k</div>
+                        </div>
+                        <div class="trust-leaders-text">
+                            <strong>Trusted by leaders</strong>
+                            <span>Across 40+ countries</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trust-right reveal-fade delay-200">
+                    <div class="trust-image-card reveal-up reveal-delay-1 zoom-hover-card">
+                        <img src="./assets/images/modern_glass_building.png" alt="Company Building"
+                            class="trust-building-img">
+                        <button class="trust-arrow-btn top-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="trust-bottom-cards">
+                        <div class="trust-stat-card white-card reveal-up reveal-delay-1 zoom-hover-card">
+                            <div class="trust-card-header">
+                                <div class="trust-icon clock-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M12 6v6l4 2" />
+                                    </svg>
+                                </div>
+                                <button class="trust-arrow-btn small-btn outline-btn">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="trust-stat-info">
+                                <h3 class="trust-stat count-up" data-count="68" data-suffix="+">68+</h3>
+                                <p class="trust-stat-desc">Years of Industry Experience</p>
+                            </div>
+                        </div>
+
+                        <div class="trust-stat-card blue-card reveal-up reveal-delay-2 zoom-hover-card">
+                            <div class="trust-card-header">
+                                <div class="trust-icon people-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                                        <circle cx="9" cy="7" r="4" />
+                                        <path d="M23 21v-2a4 4 0 00-3-3.87" />
+                                        <path d="M16 3.13a4 4 0 010 7.75" />
+                                    </svg>
+                                </div>
+                                <button class="trust-arrow-btn small-btn light-btn">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2.5">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="trust-stat-info">
+                                <h3 class="trust-stat count-up" data-count="1.2" data-suffix="M">1.2M</h3>
+                                <p class="trust-stat-desc">Happy Customers Worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="about-section">
+            <div class="about-container">
+                <!-- Top Text Grid -->
+                <div class="about-top-grid">
+                    <div class="about-text-left reveal-left">
+                        <span class="about-subtitle">25 Years of Trusted Leadership</span>
+                        <h2 class="about-title">A Legacy Built on<br>Vision and<br>Determination.</h2>
+                        <div class="about-highlight">
+                            <p class="about-highlight-preview">Today, under the leadership of the next generation, EVM
+                                continues to grow while maintaining the core values established by its founder.</p>
+
+                        </div>
+                    </div>
+                    <div class="about-text-right reveal-up reveal-delay-1">
+                        <div class="about-text-preview">
+                            <p>EVM Group was founded by E.V. Mathai, whose entrepreneurial journey began with trading
+                                in
+                                spices and hill produce Over the decades, the group expanded into multiple
+                                industries, building a strong reputation for integrity, innovation, and customer
+                                satisfaction.</p>
+                        </div>
+                        <a href="#" class="read-more-btn mobile-only" id="rm-about"
+                            onclick="toggleReadMore('about-expanded', 'rm-about'); return false;">Read more</a>
+                        <div class="about-expanded-content" id="about-expanded">
+
+                            <br>
+                            <p>From humble beginnings, EVM Group has grown into a diversified business network with
+                                interests in automobile dealerships, hospitality, entertainment, rubber
+                                trading, distribution, and tourism development.</p>
+                            <a href="#" class="read-less-btn"
+                                onclick="toggleReadMore('about-expanded', 'rm-about'); return false;">Read less</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Image Grid -->
+                <div class="about-bottom-grid">
+                    <div class="about-card red-badge-card reveal-up zoom-hover-card">
+                        <span class="badge-num">25</span>
+                        <span class="badge-text">YEARS OF<br>EXCELLENCE</span>
+                    </div>
+                    <div class="about-card img-card reveal-up reveal-delay-1 zoom-hover-card">
+                        <img class="framer-reveal reveal-img delay-200 about-grid-img"
+                            src="./assets/images/bmw bike 1.png" alt="BMW Bike">
+                    </div>
+                    <div class="about-card porsche-card border-card img-card reveal-up reveal-delay-2 zoom-hover-card">
+                        <img class="framer-reveal reveal-img delay-200 about-grid-img"
+                            src="./assets/images/Porshe 1.png" alt="Porsche GT3 RS">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="history-cards-section">
+            <div class="history-cards-header framer-reveal">
+                <h2><span class="history-normal">Our </span><span class="history-underline">History</span></h2>
+            </div>
+            <div class="history-slider-wrapper">
+                <button class="history-nav prev-btn">&#10094;</button>
+                <button class="history-nav next-btn">&#10095;</button>
+                <div class="history-cards-container reveal-fade delay-200">
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100" src="./assets/images/History/MG Hector.png"
+                                alt="2019">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">2019</div>
+                        <div class="hc-text">
+                            <p>In June 2019 we were awarded with the dealership of Morris Garages for
+                                Cochin,Trichur,Calicut and Kottayam Besides extension</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100" src="./assets/images/History/Rapido.png"
+                                alt="2019">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">2019</div>
+                        <div class="hc-text">
+                            <p>We bagged the Prestigious Skoda Dealership dealership in Oct 2019 in Muttom, Cochin and
+                                commenced Operations as EVM SKODA</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100" src="./assets/images/History/Mini.png"
+                                alt="2019">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">2019</div>
+                        <div class="hc-text">
+                            <p>EVM AutoKraft bagged the coveted dealership of MINI for Kerala</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100" src="./assets/images/History/Izusu.png"
+                                alt="2018">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">2018</div>
+                        <div class="hc-text">
+                            <p>EVM bagged this dealership of ISUZU motors for the district of Trivandrum and
+                                Pathanamthitta .</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100"
+                                src="./assets/images/History/BMW Motoraad.png" alt="2017">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">2017</div>
+                        <div class="hc-text">
+                            <p>This is the flagship motorcycle dealership of EVM group, with dealerships on Cochin,
+                                Calicut and Trivandrum .</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100" src="./assets/images/History/BMW car.png"
+                                alt="2016">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">2016</div>
+                        <div class="hc-text">
+                            <p>EVM group bagged the coveted dealership of BMW cars in 2016 for the state of Kerala.It
+                                has dealerships in Cochin and Trivandrum</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100"
+                                src="./assets/images/History/Ducati bike.png" alt="2016">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">2016</div>
+                        <div class="hc-text">
+                            <p>Ducati kochi an exclusive dealership of Ducati's range of motorcycle - launched in March
+                                2017 offers motorcycles that are</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100"
+                                src="./assets/images/History/Indian Bike.png" alt="2015">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">2015</div>
+                        <div class="hc-text">
+                            <p>We are dealers for Indian range of motorcycles - a brand that defines prestige and legacy
+                                with a passion for performance .</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100" src="./assets/images/History/Scania Bus.png"
+                                alt="2014">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">2014</div>
+                        <div class="hc-text">
+                            <p>EVM Scania</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100" src="./assets/images/History/Porshe.png"
+                                alt="2013">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">2013</div>
+                        <div class="hc-text">
+                            <p>Porsche Center kochi is Kerala's sole dealer for Porsche range of sport luxury cars .</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100" src="./assets/images/History/Polaris.jpg"
+                                alt="2012">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">2012</div>
+                        <div class="hc-text">
+                            <p>EVM group has been the dealer of Polaris since 2012 .</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100"
+                                src="./assets/images/History/Ashok leyland truck.png" alt="2011">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">2011</div>
+                        <div class="hc-text">
+                            <p>EVM Ashok Leyland</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100" src="./assets/images/History/Nissan.png"
+                                alt="2009">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">2009</div>
+                        <div class="hc-text">
+                            <p>EVM Nissan started its operation in 2009, and expanded over north and central Kerala with
+                                5 full fledged dealerships.</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100" src="./assets/images/History/Volvswagen.png"
+                                alt="2008">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">2008</div>
+                        <div class="hc-text">
+                            <p>EVM VW is the first car Dealership set up in Sept 2008 By the EVM Family</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100" src="./assets/images/History/Honda.png"
+                                alt="2001">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">2001</div>
+                        <div class="hc-text">
+                            <p>EVM Honda was the first automobile dealership of EVM group which was set up in 2001.</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100" src="./assets/images/History/EV Mathai.png"
+                                alt="1999">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">1999</div>
+                        <div class="hc-text">
+                            <p>Death of EV Mathai : the group lost its legendary founder member this year but not before
+                                he set the path for sustained business growth</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100"
+                                src="./assets/images/History/Kavitha theatre 1996.png" alt="1996">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">1996</div>
+                        <div class="hc-text">
+                            <p>Purchase of first theatre in Kochi - Kavitha</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100"
+                                src="./assets/images/History/Munnar hotel.png" alt="1988">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">1988</div>
+                        <div class="hc-text">
+                            <p>Starts first hotel in Munnar - Hill view</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100"
+                                src="./assets/images/History/Kavitha thethre 1985.png" alt="1985">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">1985</div>
+                        <div class="hc-text">
+                            <p>EVM Cinemas started the entertainment business in 1985 with the acquisition of "Jawahar"
+                                theatre at Kothamangalam, Kerala.</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100"
+                                src="./assets/images/History/Rubber bussines 1982.png" alt="1982">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">1982</div>
+                        <div class="hc-text">
+                            <p>Expansion of arrack and rubber business to North kerala</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100" src="./assets/images/History/hotel 1980.png"
+                                alt="1980">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">1980</div>
+                        <div class="hc-text">
+                            <p>Entry to hospitality sector by opening first hotel in Kothamangalam.</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100"
+                                src="./assets/images/History/transportaion 1978.png" alt="1978">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">1978</div>
+                        <div class="hc-text">
+                            <p>Transportation business expanded</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100"
+                                src="./assets/images/History/Lemon grass 1977.png" alt="1977">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">1977</div>
+                        <div class="hc-text">
+                            <p>Lemon grass cultivation</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100"
+                                src="./assets/images/History/Private bus 1976.png" alt="1976">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">1976</div>
+                        <div class="hc-text">
+                            <p>Private bus operations started</p>
+                        </div>
+                    </div>
+                    <div class="history-card">
+                        <div class="hc-image" style="overflow: hidden;">
+                            <img class="framer-reveal reveal-img delay-100"
+                                src="./assets/images/History/Rubber trading 1975.png" alt="1975">
+                        </div>
+                        <div class="hc-timeline">
+                            <div class="hc-line"></div>
+                            <div class="hc-dot"></div>
+                        </div>
+                        <div class="hc-year">1975</div>
+                        <div class="hc-text">
+                            <p>Rubber trading</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="dealers-section" style="position: relative;">
+
+            <div class="dealers-container">
+                <!-- 1. Porsche -->
+                <div class="dealer-panel reveal-up delay-100 active"
+                    style="background-image: url('./assets/images/EVM\ Dealers/EVM\ Porshe.png');">
+                    <h2 class="dealers-title framer-reveal delay-200" style="pointer-events: none;">We are Dealers for
+                    </h2>
+                    <div class="dealer-info">
+                        <h3><span>EVM</span> Porsche</h3>
+                        <p>Experience excellence and ultimate performance with Porsche.</p>
+                        <div class="dealer-line"></div>
+                    </div>
+                </div>
+
+                <!-- 2. BMW -->
+                <div class="dealer-panel reveal-up delay-200"
+                    style="background-image: url('./assets/images/EVM\ Dealers/EVM\ BMW.png');">
+                    <h2 class="dealers-title framer-reveal delay-200" style="pointer-events: none;">We are Dealers for
+                    </h2>
+                    <div class="dealer-info">
+                        <h3><span>EVM</span> BMW</h3>
+                        <p>Sheer Driving Pleasure with BMW.</p>
+                        <div class="dealer-line"></div>
+                    </div>
+                </div>
+
+                <!-- 3. MINI -->
+                <div class="dealer-panel reveal-up delay-300"
+                    style="background-image: url('./assets/images/EVM\ Dealers/EVM\ MINI.png');">
+                    <h2 class="dealers-title framer-reveal delay-200" style="pointer-events: none;">We are Dealers for
+                    </h2>
+                    <div class="dealer-info">
+                        <h3><span>EVM</span> MINI</h3>
+                        <p>Discover the go-kart feeling with MINI.</p>
+                        <div class="dealer-line"></div>
+                    </div>
+                </div>
+
+                <!-- 4. BMW Motorrad -->
+                <div class="dealer-panel reveal-up delay-400"
+                    style="background-image: url('./assets/images/EVM\ Dealers/EVM\ MotoRaad.png');">
+                    <h2 class="dealers-title framer-reveal delay-200" style="pointer-events: none;">We are Dealers for
+                    </h2>
+                    <div class="dealer-info">
+                        <h3><span>EVM</span> BMW Motorrad</h3>
+                        <p>Make Life a Ride with BMW Motorrad.</p>
+                        <div class="dealer-line"></div>
+                    </div>
+                </div>
+
+                <!-- 5. Indian -->
+                <div class="dealer-panel reveal-up delay-500"
+                    style="background-image: url('./assets/images/EVM\ Dealers/EVM\ Indian.png');">
+                    <h2 class="dealers-title framer-reveal delay-200" style="pointer-events: none;">We are Dealers for
+                    </h2>
+                    <div class="dealer-info">
+                        <h3><span>EVM</span> Indian</h3>
+                        <p>Legendary performance and timeless styling.</p>
+                        <div class="dealer-line"></div>
+                    </div>
+                </div>
+
+                <!-- 6. Cinemas -->
+                <div class="dealer-panel reveal-up delay-500"
+                    style="background-image: url('./assets/images/EVM\ Dealers/EVM\ Cinimas.png');">
+                    <h2 class="dealers-title framer-reveal delay-200" style="pointer-events: none;">We are Dealers for
+                    </h2>
+                    <div class="dealer-info">
+                        <h3><span>EVM</span> Cinemas</h3>
+                        <p>Premier entertainment and cinematic experiences.</p>
+                        <div class="dealer-line"></div>
+                    </div>
+                </div>
+
+                <!-- 7. Super Transportation -->
+                <div class="dealer-panel reveal-up delay-500"
+                    style="background-image: url('./assets/images/EVM\ Dealers/EVM\ Super\ Transpotation.png');">
+                    <h2 class="dealers-title framer-reveal delay-200" style="pointer-events: none;">We are Dealers for
+                    </h2>
+                    <div class="dealer-info">
+                        <h3><span>EVM</span> Super Transportation</h3>
+                        <p>Delivering reliable, seamless, and super transport solutions.</p>
+                        <div class="dealer-line"></div>
+                    </div>
+                </div>
+
+                <!-- 8. Plantation -->
+                <div class="dealer-panel reveal-up delay-500"
+                    style="background-image: url('./assets/images/EVM\ Dealers/EVM\ Plantaion.png');">
+                    <h2 class="dealers-title framer-reveal delay-200" style="pointer-events: none;">We are Dealers for
+                    </h2>
+                    <div class="dealer-info">
+                        <h3><span>EVM</span> Plantation</h3>
+                        <p>Rooted in nature, cultivating excellence every day.</p>
+                        <div class="dealer-line"></div>
+                    </div>
+                </div>
+
+                <!-- 9. Honda -->
+                <div class="dealer-panel reveal-up delay-500"
+                    style="background-image: url('./assets/images/EVM\ Dealers/EVM\ Honda.png');">
+                    <h2 class="dealers-title framer-reveal delay-200" style="pointer-events: none;">We are Dealers for
+                    </h2>
+                    <div class="dealer-info">
+                        <h3><span>EVM</span> Honda</h3>
+                        <p>The Power of Dreams, engineered for you.</p>
+                        <div class="dealer-line"></div>
+                    </div>
+                </div>
+
+                <!-- 10. Ashok Leyland -->
+                <div class="dealer-panel reveal-up delay-500"
+                    style="background-image: url('./assets/images/EVM\ Dealers/EVM\ Ashok\ Leyland.png');">
+                    <h2 class="dealers-title framer-reveal delay-200" style="pointer-events: none;">We are Dealers for
+                    </h2>
+                    <div class="dealer-info">
+                        <h3><span>EVM</span> Ashok Leyland</h3>
+                        <p>Empowering your business with robust commercial vehicles.</p>
+                        <div class="dealer-line"></div>
+                    </div>
+                </div>
+
+                <!-- 11. Datsun -->
+                <div class="dealer-panel reveal-up delay-500"
+                    style="background-image: url('./assets/images/EVM\ Dealers/EVM\ datsun.png');">
+                    <h2 class="dealers-title framer-reveal delay-200" style="pointer-events: none;">We are Dealers for
+                    </h2>
+                    <div class="dealer-info">
+                        <h3><span>EVM</span> Datsun</h3>
+                        <p>Accessible motoring designed for the forward-thinking.</p>
+                        <div class="dealer-line"></div>
+                    </div>
+                </div>
+
+                <!-- 12. Skoda -->
+                <div class="dealer-panel reveal-up delay-500"
+                    style="background-image: url('./assets/images/EVM\ Dealers/EVM\ Scoda.png');">
+                    <h2 class="dealers-title framer-reveal delay-200" style="pointer-events: none;">We are Dealers for
+                    </h2>
+                    <div class="dealer-info">
+                        <h3><span>EVM</span> Skoda</h3>
+                        <p>Simply Clever mobility engineered for you.</p>
+                        <div class="dealer-line"></div>
+                    </div>
+                </div>
+
+                <!-- 13. Isuzu -->
+                <div class="dealer-panel reveal-up delay-500"
+                    style="background-image: url('./assets/images/EVM\ Dealers/EVM\ Isuzu.png');">
+                    <h2 class="dealers-title framer-reveal delay-200" style="pointer-events: none;">We are Dealers for
+                    </h2>
+                    <div class="dealer-info">
+                        <h3><span>EVM</span> Isuzu</h3>
+                        <p>Never Stop exploring with dependable utility vehicles.</p>
+                        <div class="dealer-line"></div>
+                    </div>
+                </div>
+
+                <!-- 14. Nissan -->
+                <div class="dealer-panel reveal-up delay-500"
+                    style="background-image: url('./assets/images/EVM\ Dealers/EVM\ Nissan.png');">
+                    <h2 class="dealers-title framer-reveal delay-200" style="pointer-events: none;">We are Dealers for
+                    </h2>
+                    <div class="dealer-info">
+                        <h3><span>EVM</span> Nissan</h3>
+                        <p>Innovation that excites, driving the future forward.</p>
+                        <div class="dealer-line"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="directors-section">
+            <div class="directors-header reveal-up">
+                <div class="directors-header-left reveal-left">
+                    <h5 class="directors-subtitle">LEADERSHIP ARCHITECTURE</h5>
+                    <h2 class="directors-title">Our Directors</h2>
+                </div>
+                <div class="directors-header-right">
+                    <p>Guided by a collective vision of excellence, our board navigates the complex intersection of
+                        global strategy and local impact with decisive clarity.</p>
+                </div>
+            </div>
+
+            <div class="directors-grid">
+                <!-- Card 1 -->
+                <div class="director-card reveal-up zoom-hover-card">
+                    <div class="director-image">
+                        <img src="./assets/images/Ev Mathai.png" alt="E V Mathai">
+                    </div>
+                    <div class="director-info">
+                        <div class="info-top">
+                            <span class="director-role">Founder</span>
+                            <h3 class="director-name">E V Mathai</h3>
+                        </div>
+                        <div class="info-bottom">
+                            <span class="director-tag">STRATEGIC VISION & ETHICS</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Card 2-->
+                <div class="director-card reveal-up zoom-hover-card">
+                    <div class="director-image">
+                        <img src="./assets/images/Em Johny.png" alt="E.M Johny">
+                    </div>
+                    <div class="director-info">
+                        <div class="info-top">
+                            <span class="director-role">Chairman</span>
+                            <h3 class="director-name">E.M Johny</h3>
+                        </div>
+                        <div class="info-bottom">
+                            <span class="director-tag">INFRASTRUCTURE & LEGACY</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3-->
+
+                <div class="director-card reveal-up zoom-hover-card">
+                    <div class="director-image">
+                        <img src="./assets/images/Sabu john.png" alt="Sabu Johny">
+                    </div>
+                    <div class="director-info">
+                        <div class="info-top">
+                            <span class="director-role">MANAGING DIRECTOR</span>
+                            <h3 class="director-name">Sabu Johny</h3>
+                        </div>
+                        <div class="info-bottom">
+                            <span class="director-tag">OPERATIONS & GROWTH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="director-card reveal-up zoom-hover-card">
+                    <div class="director-image">
+                        <img src="./assets/images/Divya Paul.png" alt="Divya Paul">
+                    </div>
+                    <div class="director-info">
+                        <div class="info-top">
+                            <span class="director-role">DIRECTOR</span>
+                            <h3 class="director-name">Divya Paul</h3>
+                        </div>
+                        <div class="info-bottom">
+                            <span class="director-tag">INNOVATION & FINANCE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="achievements-section">
+            <div class="achievements-header reveal-up">
+                <h2 class="achievements-title">Achievements and Awards</h2>
+                <p class="achievements-subtitle">Celebrating our milestones, dedication, and industry recognition</p>
+            </div>
+
+            <!-- Main Achievement Slider Hub -->
+            <div class="main-achievement-card framer-reveal">
+                <div class="achievement-image-column reveal-fade" style="overflow: hidden; flex: 1.2;">
+                    <img id="award-img" src="./assets/images/Awwards section/Nissan showroom.png" alt="Featured Award"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                    <span class="feat-badge">FEATURED ACHIEVEMENT</span>
+                </div>
+                <div class="achievement-content-column reveal-up delay-200"
+                    style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 id="award-title" class="achievement-heading" style="min-height: 40px;">Nissan Sales &
+                            Achievement</h3>
+                        <p id="award-desc" class="achievement-desc" style="min-height: 120px;">Executive Member of
+                            Nissan — Dealer core committee. Highest Nissan Sales All India. First Dealer in India to
+                            cross sales of 20,000 units.</p>
+                    </div>
+                    <div class="achievement-dots" id="award-dots" style="margin-top: auto;">
+                        <span class="dot active" style="cursor: pointer;"></span>
+                        <span class="dot" style="cursor: pointer;"></span>
+                        <span class="dot" style="cursor: pointer;"></span>
+                        <span class="dot" style="cursor: pointer;"></span>
+                        <span class="dot" style="cursor: pointer;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Awards Row -->
+            <div class="bottom-awards-row">
+                <div class="award-card border-card reveal-up zoom-hover-card">
+                    <div class="award-logo">
+                        <img src="./assets/images/ashivement 1.png" alt="EVM Honda Award"
+                            onerror="this.onerror=null; this.src='./assets/images/Honda.png'">
+                    </div>
+                    <div class="award-text">
+                        <h4>Excellence in Automotive Leadership</h4>
+                        <p>EVM Honda proudly earned Dealer of the Year recognition in 2018.</p>
+                    </div>
+                </div>
+                <div class="award-card border-card reveal-up zoom-hover-card">
+                    <div class="award-logo">
+                        <img src="./assets/images/ashivement 2.png" alt="EVM Ashok Leyland Award"
+                            onerror="this.onerror=null; this.src='./assets/images/Ashok Leyland.png'">
+                    </div>
+                    <div class="award-text">
+                        <h4>Dealer of the Year Excellence</h4>
+                        <p>Recognized for outstanding performance and customer satisfaction.A proud milestone</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials-section">
+            <div class="testimonials-container">
+                <div class="testimonials-header reveal-up">
+                    <h5 class="testimonials-subtitle">CUSTOMER EXPERIENCES</h5>
+                    <h2 class="testimonials-title">WHAT PEOPLE SAY</h2>
+                    <div class="testimonials-line"></div>
+                </div>
+
+                <div class="testimonial-carousel reveal-fade delay-200">
+                    <!-- Prev Card -->
+                    <div class="t-side-card t-prev">
+                        <img src="./assets/images/testimonials/Lijo Augustin.png" alt="Previous Customer">
+                        <div class="t-arrow-overlay">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                                <path d="M15 18l-6-6 6-6" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Main Active Card -->
+                    <div class="t-main-card">
+                        <div class="t-main-image">
+                            <!-- Blue stroke edge line -->
+                            <div class="t-image-border"></div>
+                            <img src="./assets/images/testimonials/Sujith Kummath.png" alt="Sujith Kammath">
+                        </div>
+                        <div class="t-main-content">
+                            <div class="t-author-info"
+                                style="margin-top: 0; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #d1d5db;">
+                                <p class="t-role" style="text-transform: uppercase;">BMW</p>
+                                <h3 class="t-name">Sujith Kammath</h3>
+                            </div>
+
+                            <div class="t-quote-icon" style="margin-bottom: 10px;">
+                                <svg width="20" height="20" viewBox="0 0 64 64" fill="none" stroke="#252525"
+                                    stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M26 32v-12a8 8 0 0 0-8-8h-8v16h10v8a8 8 0 0 1-8 8v8a16 16 0 0 0 16-16z" />
+                                    <path d="M58 32v-12a8 8 0 0 0-8-8h-8v16h10v8a8 8 0 0 1-8 8v8a16 16 0 0 0 16-16z" />
+                                </svg>
+                            </div>
+
+                            <p class="t-quote-text">"Being an Auto enthusiast the relation with EVM group made me the
+                                owner of almost be portfolio range includes cars motorad & mini"</p>
+
+                        </div>
+                    </div>
+
+                    <!-- Next Card -->
+                    <div class="t-side-card t-next">
+                        <img src="./assets/images/testimonials/Remya nambeeshan.png" alt="Next Customer">
+                        <div class="t-arrow-overlay">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2">
+                                <path d="M9 18l6-6-6-6" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Top Section -->
+            <div class="footer-top">
+                <div class="footer-cta">
+                    <h2>Rent a car fast</h2>
+                    <p>Simple booking in one click.</p>
+                </div>
+                <div class="footer-action">
+                    <a href="#" class="btn-book-now">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Middle Section -->
+            <div class="footer-middle">
+                <div class="footer-col brand-col">
+                    <h3 class="footer-logo">EVM</h3>
+                    <p class="brand-desc">People through our chronicled legacy and have a look at how we evolved over
+                        the years</p>
+                </div>
+
+                <div class="footer-col links-col">
+                    <h4>Our Business</h4>
+                    <ul>
+                        <li><a href="#">Plantation</a></li>
+                        <li><a href="#">Transportation</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Hotel and Resorts</a></li>
+                        <li><a href="#">EVM Wheels self drive rent a car</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col links-col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col links-col">
+                    <h4>Automobile</h4>
+                    <ul>
+                        <li><a href="#">Cars</a></li>
+                        <li><a href="#">Bikes</a></li>
+                        <li><a href="#">EVM Wheels self drive rent a car</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; 2020 EVM Inc.
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="./assets/js/main.js?v=2"></script>
+</body>
+
+</html>
