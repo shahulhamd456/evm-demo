@@ -234,22 +234,22 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: "Honda Wing World Dealers",
             desc: "The only Honda dealer in Kerala who has been selected by Honda<br>to join the Elite Club of Wing World Dealers. Ranked No.1 in Dealer<br>Customer Satisfaction Index in SouthIndia and No: 2 in All India.<br>(DCSI & BCSI Survey) 2014-2015.",
-            image: "./assets/images/Award Ceremony.png"
+            image: "./assets/images/Awward Section/Honda wing world (1).webp"
         },
         {
             title: "National Outstanding Performance",
             desc: "Awarded for demonstrating exceptional sales growth and pioneering<br>service strategies across the entire southern market.<br>Setting a new benchmark for automotive excellence.<br>(National Automative Survey) 2018-2019.",
-            image: "./assets/images/Award Ceremony.png"
+            image: "./assets/images/Awward Section/Nissan showroom (1).webp"
         },
         {
             title: "Premium Dealer of the Year",
             desc: "Recognized internationally for maintaining the highest tier<br>of customer satisfaction and technical innovation.<br>A testament to our unwavering commitment to quality.<br>(Global Quality Index) 2021-2022.",
-            image: "./assets/images/Award Ceremony.png"
+            image: "./assets/images/Awward Section/Porshe 911 2020 (1).webp"
         },
         {
             title: "Sustainability Champion Award",
             desc: "Honored for leading the transition towards greener operations<br>and establishing sustainable logistics pipelines in Kerala.<br>Paving the way for the future of environmentally conscious business.<br>2023-2024.",
-            image: "./assets/images/Award Ceremony.png"
+            image: "./assets/images/Awward Section/BMW X-Drive (1).webp"
         }
     ];
 
@@ -295,55 +295,55 @@ document.addEventListener('DOMContentLoaded', () => {
             name: "Sujith Kammath",
             role: "BMW",
             review: "\"Being an Auto enthusiast the relation with EVM group made me the owner of almost be portfolio range includes cars motorad & mini\"",
-            image: "./assets/images/testimonials/Sujith Kummath.png"
+            image: "./assets/images/Tesimonials/Sujith Kummath.webp"
         },
         {
             name: "Remya Nambeesan",
             role: "MINI COOPER",
             review: "\"I recently purchased my first MINI from MINI EVM Autokraft. I loved the experience and would surely recommend it to others.\"",
-            image: "./assets/images/testimonials/Remya nambeeshan.png"
+            image: "./assets/images/Tesimonials/Remya nambeeshan.webp"
         },
         {
             name: "Jeeva Joseph",
             role: "MG HECTOR",
             review: "\"Two good things happened last year. . I am using a top-end diesel variant with top-class performance with a satisfying 13 km/l mileage on the road. Thanks to Coastline Garages for helping me in choosing the better vehicle.\"",
-            image: "./assets/images/testimonials/Jeeva Joseph.png"
+            image: "./assets/images/Tesimonials/Jeeva Joseph.webp"
         },
         {
             name: "Vivek Ajit",
             role: "MINI COOPER",
             review: "\"Our MINI is the 3rd car purchased from the EVM Autokraft dealership. This itself proves that their customer service is way beyond others. Really had a great experience. The MINI is a car that I always wanted to have in my garage and is a real pleasure to drive.\"",
-            image: "./assets/images/testimonials/Vivek Ajith.png"
+            image: "./assets/images/Tesimonials/Vivek Ajith.webp"
         },
         {
             name: "Lijo Augustin",
             role: "MG HECTOR",
             review: "\"The MG Hector is the best car. The seating comfortableness is technically very good and has fabulous interior and outer body design. It is a very rich looking and advanced technology at this price. Boot space is satisfied with my family and sunroof is also very satisfying.\"",
-            image: "./assets/images/testimonials/Lijo Augustin.png"
+            image: "./assets/images/Tesimonials/Lijo Augustin.webp"
         },
         {
             name: "Mr Jithin Jayakrishnan",
             role: "BMW",
             review: "\"The best customer-centric dealership I have ever dealt with happy to add The first BMW 840i in Kerala. Courteous staff and Management.\"",
-            image: "./assets/images/testimonials/Mr Jithin JayaKrishnan.png"
+            image: "./assets/images/Tesimonials/Mr Jithin JayaKrishnan.webp"
         },
         {
             name: "Dr Sunil Sreedhar",
             role: "BMW",
             review: "\"Happy to Own the First New X6 M40i in kerala the relation with EVM Group for the past 4 to 5 years made me repeated purchases from the same group\"",
-            image: "./assets/images/testimonials/Dr Sunil Sreedaran.png"
+            image: "./assets/images/Tesimonials/Dr Sunil Sreedaran.webp"
         },
         {
             name: "Josily Boban",
             role: "MINI COOPER",
             review: "\"Had a fantastic experience buying my MINI and I absolutely love the car. It really is a great city car.\"",
-            image: "./assets/images/testimonials/Josly Boban.png"
+            image: "./assets/images/Tesimonials/Josly Boban.webp"
         },
         {
             name: "Alfan Hassan",
             role: "MINI COOPER",
             review: "\"I wanted a MINI but one in which I could travel with my entire family. The MINI Countryman is a perfect choice. The staff at the MINI dealership made the entire buying experience cherishable.\"",
-            image: "./assets/images/testimonials/Alfan Hassan.png"
+            image: "./assets/images/Tesimonials/Alfan Hassan.webp"
         }
     ];
 
@@ -366,40 +366,40 @@ document.addEventListener('DOMContentLoaded', () => {
         const prevIndex = (index - 1 + testimonialsData.length) % testimonialsData.length;
         const nextIndex = (index + 1) % testimonialsData.length;
 
-        const mainCard    = document.querySelector('.t-main-card');
+        const mainCard = document.querySelector('.t-main-card');
         const origPrevImg = document.querySelector('.t-prev img');
         const origNextImg = document.querySelector('.t-next img');
 
         const slideOut = direction === 'next' ? '-24px' : '24px';
-        const slideIn  = direction === 'next' ? '24px'  : '-24px';
+        const slideIn = direction === 'next' ? '24px' : '-24px';
 
         // — Step 1: fade the card OUT —
         const fadeOut = 'opacity 0.22s ease, transform 0.22s ease';
         mainCard.style.transition = fadeOut;
-        mainCard.style.opacity    = '0';
-        mainCard.style.transform  = `translateX(${slideOut})`;
+        mainCard.style.opacity = '0';
+        mainCard.style.transform = `translateX(${slideOut})`;
 
         setTimeout(() => {
             // — Step 2: swap content while invisible —
             testQuote.textContent = testimonialsData[index].review;
-            testName.textContent  = testimonialsData[index].name;
-            testRole.textContent  = testimonialsData[index].role;
-            mainImg.src           = testimonialsData[index].image;
+            testName.textContent = testimonialsData[index].name;
+            testRole.textContent = testimonialsData[index].role;
+            mainImg.src = testimonialsData[index].image;
 
             if (origPrevImg) origPrevImg.src = testimonialsData[prevIndex].image;
             if (origNextImg) origNextImg.src = testimonialsData[nextIndex].image;
 
             // reset to the opposite side instantly
             mainCard.style.transition = 'none';
-            mainCard.style.transform  = `translateX(${slideIn})`;
-            mainCard.style.opacity    = '0';
+            mainCard.style.transform = `translateX(${slideIn})`;
+            mainCard.style.opacity = '0';
 
             void mainCard.offsetWidth; // force reflow
 
             // — Step 3: fade IN —
             mainCard.style.transition = 'opacity 0.30s ease, transform 0.30s cubic-bezier(0.16, 1, 0.3, 1)';
-            mainCard.style.opacity    = '1';
-            mainCard.style.transform  = 'translateX(0)';
+            mainCard.style.opacity = '1';
+            mainCard.style.transform = 'translateX(0)';
 
             setTimeout(() => {
                 mainCard.style.transition = '';
@@ -519,8 +519,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const awardDotsEl = document.getElementById('award-dots');
     if (awardDotsEl) {
         const allAwardDots = Array.from(awardDotsEl.querySelectorAll('.dot'));
-        const totalAwards  = allAwardDots.length;
-        let   aCurrentIdx  = 0;
+        const totalAwards = allAwardDots.length;
+        let aCurrentIdx = 0;
 
         allAwardDots.forEach((dot, i) => {
             dot.addEventListener('click', () => { aCurrentIdx = i; });
@@ -555,8 +555,8 @@ document.addEventListener('DOMContentLoaded', () => {
    Dark Mode — Toggle & Init
    ========================================= */
 function toggleDarkMode() {
-    const html     = document.documentElement;
-    const isDark   = html.getAttribute('data-theme') === 'dark';
+    const html = document.documentElement;
+    const isDark = html.getAttribute('data-theme') === 'dark';
     const newTheme = isDark ? 'light' : 'dark';
     html.setAttribute('data-theme', newTheme);
     localStorage.setItem('evm-theme', newTheme);
@@ -624,27 +624,27 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: "Nissan Sales & Achievement",
             desc: "Executive Member of Nissan — Dealer core committee. Highest Nissan Sales All India. First Dealer in India to cross sales of 20,000 units.",
-            img: "./assets/images/Awwards section/Nissan showroom.png"
+            img: "./assets/images/Awward Section/Nissan showroom (1).webp"
         },
         {
             title: "Honda Wing World Dealers",
             desc: "The only Honda dealer in Kerala who has been selected by Honda to join the Elite Club of Wing World Dealers. Ranked No.1 in Dealer Customer Satisfaction Index in SouthIndia and No: 2 in All India. (DCSI & BCSI Survey) 2014-2015.",
-            img: "./assets/images/Awwards section/Honda wing world.png"
+            img: "./assets/images/Awward Section/Honda wing world (1).webp"
         },
         {
             title: "Porsche Infrastructure",
             desc: "Set the benchmark for Porsche infrastructure in India.",
-            img: "./assets/images/Awwards section/porshe showroom.png"
+            img: "./assets/images/Awward Section/porshe showroom.webp"
         },
         {
             title: "Porsche Deliveries",
             desc: "Delivered above 350 Porsche cars since inception. Delivered India’s first 2020 MY 911.",
-            img: "./assets/images/Awwards section/Porshe 911 2020.png"
+            img: "./assets/images/Awward Section/Porshe 911 2020 (1).webp"
         },
         {
             title: "BMW Retail Excellence",
             desc: "Achieved annual retail targets in BMW since inception. 120% CBU achievement Including M760Li xDrive & X5M in 2018. Complaints per throughput were the lowest in the country in 2018. Manpower Availability 100% and Attrition of 0% in After-sales.",
-            img: "./assets/images/Awwards section/BMW X-Drive.png"
+            img: "./assets/images/Awward Section/BMW X-Drive (1).webp"
         }
     ];
 
@@ -725,12 +725,12 @@ document.addEventListener('DOMContentLoaded', () => {
    10. Mobile App Sidebar Engine
    ========================================= */
 document.addEventListener('DOMContentLoaded', () => {
-    const hamburgerBtn  = document.getElementById('mobileMenuBtn');
-    const sidebar       = document.getElementById('mobileSidebar');
-    const backdrop      = document.getElementById('sidebarBackdrop');
-    const closeBtn      = document.getElementById('sidebarClose');
+    const hamburgerBtn = document.getElementById('mobileMenuBtn');
+    const sidebar = document.getElementById('mobileSidebar');
+    const backdrop = document.getElementById('sidebarBackdrop');
+    const closeBtn = document.getElementById('sidebarClose');
     const sectorsToggle = document.getElementById('msbSectors');
-    const sectorsMenu   = document.getElementById('msbSectorsMenu');
+    const sectorsMenu = document.getElementById('msbSectorsMenu');
 
     if (!hamburgerBtn || !sidebar || !backdrop) return;
 
@@ -798,14 +798,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!siteHeader) return;
 
     let lastScrollY = window.scrollY;
-    
+
     window.addEventListener('scroll', () => {
         const currentScrollY = window.scrollY;
-        
+
         // Add new pill style past 150px
         if (currentScrollY > 150) {
             siteHeader.classList.add('scrolled');
-            
+
             if (currentScrollY > lastScrollY) {
                 // Scrolling down -> hide header
                 siteHeader.classList.add('hidden');
@@ -818,7 +818,7 @@ document.addEventListener('DOMContentLoaded', () => {
             siteHeader.classList.remove('scrolled');
             siteHeader.classList.remove('hidden');
         }
-        
+
         lastScrollY = currentScrollY;
     }, { passive: true });
 });
@@ -855,7 +855,7 @@ function toggleReadMore(expandedId, readMoreId) {
 (function heroIntroSequence() {
     const preloader = document.getElementById('evmPreloader');
 
-    const PRELOADER_DISMISS  = 3300;  // ms: when to start fading preloader (premium animation needs 3.3s)
+    const PRELOADER_DISMISS = 3300;  // ms: when to start fading preloader (premium animation needs 3.3s)
     const CONTENT_REVEAL_LAG = 350;   // ms after dismiss starts before content appears
 
     // ── Step 1: Dismiss preloader ──────────────────────────────────
@@ -894,17 +894,17 @@ function toggleReadMore(expandedId, readMoreId) {
     const easeOut = (t) => 1 - Math.pow(1 - t, 3);
 
     const animateCounter = (el) => {
-        const target   = parseFloat(el.dataset.count);
-        const suffix   = el.dataset.suffix || '';
+        const target = parseFloat(el.dataset.count);
+        const suffix = el.dataset.suffix || '';
         const isDecimal = !Number.isInteger(target);
         const duration = 1800; // ms
-        let startTime  = null;
+        let startTime = null;
 
         el.classList.add('counting');
 
         const step = (timestamp) => {
             if (!startTime) startTime = timestamp;
-            const elapsed  = timestamp - startTime;
+            const elapsed = timestamp - startTime;
             const progress = Math.min(elapsed / duration, 1);
             const easedVal = easeOut(progress) * target;
 
