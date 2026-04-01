@@ -3362,6 +3362,22 @@ body.no-scroll {
   }
 }
 
+
+
+@media screen and (max-width: 991px) {
+  .mobile-menu-btn {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    width: 32px !important;
+    height: 24px !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+    z-index: 9999 !important;
+  }
+}
+
 /* -------------------------------------
    Mobile & Smartphone Screens (Max 768px)
    ------------------------------------- */
@@ -5500,6 +5516,22 @@ html[data-theme="dark"] .dark-toggle .icon-sun {
   display: block;
 }
 
+
+
+html[data-theme="dark"] .msb-stat-num {
+
+  color: #ffffff !important;
+
+}
+
+
+
+html[data-theme="dark"] .msb-promo-text strong {
+
+  color: #ffffff !important;
+
+}
+
 /* Sidebar dark toggle */
 .msb-dark-toggle {
   display: flex;
@@ -6935,4 +6967,13 @@ html[data-theme="dark"] .hero-overlay {
     font-size: clamp(11px, 3.2vw, 14px) !important;
     max-width: 280px !important;
   }
+}
+
+
+@media screen and (max-width: 1034px) {
+
+  .dealers-dots {
+    display: none !important;
+  }
+
 }

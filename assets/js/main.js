@@ -745,6 +745,9 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const closeSidebar = () => {
+        // Move focus back to the trigger button BEFORE setting aria-hidden,
+        // so no focused element remains inside an aria-hidden ancestor.
+        hamburgerBtn.focus();
         hamburgerBtn.classList.remove('active');
         hamburgerBtn.setAttribute('aria-expanded', 'false');
         sidebar.classList.remove('open');
