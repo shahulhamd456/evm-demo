@@ -6830,14 +6830,10 @@ html[data-theme="dark"] .hero-overlay {
 
   /* Extend overlay to cover full width on phones for text legibility */
   .hero-overlay {
-    background: linear-gradient(to bottom,
-        rgba(255, 255, 255, 0.92) 0%,
-        rgba(255, 255, 255, 0.85) 40%,
-        rgba(255, 255, 255, 0.6) 70%,
-        rgba(255, 255, 255, 0.1) 100%) !important;
+    background: linear-gradient(to bottom, rgb(0 0 0 / 92%) 0%, rgb(0 0 0 / 85%) 0%, rgb(0 0 0 / 60%) 0%, rgba(255, 255, 255, 0.001) 100%) !important;
   }
 
-  /* Center the content wrapper */
+  /* Center the content wrapper — phone only */
   .hero-content {
     padding: 0 24px !important;
     align-items: center !important;
@@ -6845,7 +6841,7 @@ html[data-theme="dark"] .hero-overlay {
     text-align: center !important;
   }
 
-  /* Center the left panel */
+  /* Center the left panel — phone only */
   .hero-left {
     max-width: 100% !important;
     width: 100% !important;
