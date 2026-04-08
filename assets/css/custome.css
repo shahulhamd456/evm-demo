@@ -231,7 +231,7 @@ ul {
   background: #000000 !important;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 990px) {
   .desktop-only {
     display: none !important;
   }
@@ -2029,7 +2029,7 @@ ul {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 990px) {
   .hero-big-number {
     font-size: 160px;
     letter-spacing: -6px;
@@ -3364,7 +3364,7 @@ body.no-scroll {
 
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 990px) {
   .mobile-menu-btn {
     display: flex !important;
     flex-direction: column !important;
@@ -3394,7 +3394,7 @@ body.no-scroll {
     padding: 60px 40px !important;
   }
 
-  
+
   .hero-content,
   .stats-container,
   .legacy-container,
@@ -4624,7 +4624,7 @@ body.no-scroll {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
 
   /* ── Hamburger button overrides ─────────────────── */
   .mobile-menu-btn {
@@ -5595,11 +5595,7 @@ html[data-theme="dark"] .site-header.scrolled .header-container {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
 }
 
-html[data-theme="dark"] .main-nav a {
-  color: var(--text-primary) !important;
-}
-
-html[data-theme="dark"] .main-nav a:hover {
+html[data-theme="dark"] .main-nav ul li a.active {
   color: var(--accent) !important;
 }
 
